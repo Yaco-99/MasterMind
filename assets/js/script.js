@@ -11,8 +11,6 @@ let pickedColor = [],
 
 randomColor();
 
-console.log(randomColors);
-
 choice.forEach((button) => {
   button.addEventListener("click", () => {
     pickedColor.push(button.id);
@@ -60,7 +58,6 @@ function reset() {
   i = 0;
   for (let j = 0; j < 4; j++) {
     result[j].classList.remove(`bg-${pickedColor[j]}`);
-    console.log(j);
   }
   pickedColor = [];
   return;
@@ -90,7 +87,6 @@ function verification() {
       userTemp.splice(index, 1, "userChecked");
     }
   });
-  console.log(userTemp);
   userTemp.map((el, index) => {
     if (temp.includes(el)) {
       white++;
