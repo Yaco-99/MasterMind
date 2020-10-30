@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterMind</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Master mind</h1>
+      <div class="row">
+        <div
+          class="test col-md-3 border border-dark"
+          id="verified-target"
+        ></div>
+        <div class="col-md-6 d-flex flex-column">
+          <div class="history border border-dark" id="history"></div>
+          <div
+            class="userChoice border border-dark d-flex flex-row justify-content-around align-items-center"
+          >
+            <div
+              class="round-button border border-dark rounded-circle"
+              id="firstChoice"
+            ></div>
+            <div
+              class="round-button border border-dark rounded-circle"
+              id="secondChoice"
+            ></div>
+            <div
+              class="round-button border border-dark rounded-circle"
+              id="thirdChoice"
+            ></div>
+            <div
+              class="round-button border border-dark rounded-circle"
+              id="fourthChoice"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="colors col-md-3 border border-dark d-flex flex-column justify-content-around align-items-center"
+        >
+          <button
+            type="button"
+            data-color-choice
+            class="round-button btn btn-lg btn-primary rounded-circle"
+            id="primary"
+          >
+            Blue
+          </button>
+          <button
+            type="button"
+            data-color-choice
+            class="round-button btn btn-lg btn-success rounded-circle"
+            id="success"
+          >
+            Green
+          </button>
+          <button
+            type="button"
+            data-color-choice
+            class="round-button btn btn-lg btn-danger rounded-circle"
+            id="danger"
+          >
+            Red
+          </button>
+          <button
+            type="button"
+            data-color-choice
+            class="round-button btn btn-lg btn-warning rounded-circle"
+            id="warning"
+          >
+            Yellow
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="win col col-md-2" id="modal">
+      <h2>You win !</h2>
+      <button class="btn btn-primary" id="newGame">New game</button>
+    </div>
+    <div id="overlay"></div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="assets/node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="assets/node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
